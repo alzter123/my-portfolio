@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    
+    <style>
+
+        .fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="css/magnific-popup.css"> 
-    <link rel="stylesheet" href="css/templatemo-ocean-vibes.css"> 
+    <link rel="stylesheet" href="css/templatemo-ocean-vibes.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 <!--
     
 TemplateMo 554 Ocean Vibes
@@ -16,11 +54,16 @@ https://templatemo.com/tm-554-ocean-vibes
 
 -->
 </head>
-<body>
+
+<body background="">
     <header class="tm-site-header">
+        <div data-aos="fade-left">
         <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">My</span> <span class="tm-color-gray-2">Portfolio</span></h1>
-        <p class="tm-tagline tm-color-gray" style="font-size: 50px; margin-top: 100px;">Hi there! My name is <b>Aldrich Nasayao</b>. <br/><br/>
+    </div>
+        <div data-aos="fade-up">
+            <p class="tm-tagline tm-color-gray" style="font-size: 50px; margin-top: 100px;">Hi there! My name is <b>Aldrich Nasayao</b>. <br/><br/>
             To know more about me, please click on the <b>'Introduction'</b> link.</p>
+            </div>
     </header>
 
     <!-- Video banner 400 px height -->
@@ -31,6 +74,7 @@ https://templatemo.com/tm-554-ocean-vibes
         <i id="tm-video-control-button" class="fas fa-pause"></i>
     </div>
     <div class="tm-container" style="margin-left:350px;">
+        <div data-aos="fade-up">
         <nav class="tm-main-nav">
             <ul id="inline-popups">
                 <li class="tm-nav-item">
@@ -65,6 +109,7 @@ https://templatemo.com/tm-554-ocean-vibes
                 </li> -->
             </ul>
         </nav>
+    </div>
 
         <!-- Popup itself -->
         <div id="intro" class="popup mfp-with-anim mfp-hide tm-bg-gray">
@@ -482,8 +527,18 @@ https://templatemo.com/tm-554-ocean-vibes
                        and uploading images for tests and solutions.
                     </p>
                 </div>
+                <div class="tm-col tm-about-col tm-about-left">                    
+                    <!-- <img src="img/about.jpg" alt="Image" class="tm-mb-30"> -->
+                    <b style="font-size:30px;">Project 2: Simple CRUD App with Login Authentication</b><br/>
+                    <b>Language Used:</b> Vue Javascript Framework<br/>
+                     <b>URL: </b>https://github.com/alzter123/simple-crud-app-with-login-auth<br/>
+                    <img src="img/vue_pic1.png" style="width: 500px; height:250px;" /><br/>
+                    <p><b>Description:</b> A simple CRUD application with Login Authentication for Admin and Users. The Admin can add, update and delete User records
+                        while Users can only edit their personal information details.
+                     </p>
+                 </div>
                 <div class="tm-col tm-about-col tm-about-left">          
-                  <b style="font-size:30px;">Project 2: 
+                  <b style="font-size:30px;">Project 3: 
                     Youtube Video List App</b>
                 <br/>
                 <b>Language Used:</b> Vue Javascript Framework
@@ -577,7 +632,8 @@ https://templatemo.com/tm-554-ocean-vibes
         <span>Web Designed by 
         <a href="https://templatemo.com" title="free website templates" target="_parent" rel="nofollow">TemplateMo</a></span>
 </footer> -->
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init(); </script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
